@@ -20,19 +20,16 @@ function HomeNav() {
         <>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container fluid>
-                    <Navbar.Brand> CRUD </Navbar.Brand>
+                    <Navbar.Brand className='fw-bold'> CRUD </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
-                            className="m-auto my-2 my-lg-0"
+                            className="me-auto my-2 my-lg-0"
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
                             <NavLink to='/' style={{ textDecoration: "none" }}>
                                 <Navbar.Brand>Home</Navbar.Brand>
-                            </NavLink>
-                            <NavLink to='/create' style={{ textDecoration: "none" }}>
-                                <Navbar.Brand> Create </Navbar.Brand>
                             </NavLink>
                         </Nav>
                         <Form className="d-flex">

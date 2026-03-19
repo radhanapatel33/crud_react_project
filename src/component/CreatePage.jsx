@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import { useDispatch } from 'react-redux';
-import { useNavigate } from "react-router"
+import { useNavigate ,Link} from "react-router"
 
 import '../App.css'
 import { insertData } from '../CrudRedux/Slices/CrudSlice';
@@ -78,9 +78,12 @@ function CreatePage() {
                     </Form.Group>
                 </Row>
 
-                <Button variant="success" type="submit" className='my-3'>
+                <Button variant="success" type="submit" className='my-3 me-4'>
                     Submit
                 </Button>
+                <Link to='/'>
+                    <button className='btn btn-primary'>Home</button>
+                </Link>
             </Form>
         </Container>
     )
